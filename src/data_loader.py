@@ -13,8 +13,6 @@ def load_data(file_path):
     Load a CSV file with 'text' and 'label' columns.
     """
 
-    file_path = os.path.join('..', file_path)
-
     
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"File not found: {file_path}")

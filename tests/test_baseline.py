@@ -1,12 +1,11 @@
 import sys
 import pytest
-import numpy as np
 
-sys.path.append("src")
+sys.path.append("..")
 
-from config import Config
-from data_loader import load_data, split_data, preprocess_tfidf
-from model import train_baseline_model
+from src.config import Config
+from src.data_loader import load_data, split_data, preprocess_tfidf
+from src.model import train_baseline_model
 
 cfg = Config()
 

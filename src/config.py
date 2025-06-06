@@ -4,8 +4,8 @@ from pathlib import Path
 @dataclass
 class Config:
     # Data paths
-    raw_data_dir: Path = Path("data/raw")
-    processed_data_dir: Path = Path("data/processed")
+    raw_data_dir: Path = Path("../data/raw")
+    processed_data_dir: Path = Path("../data/processed")
     model_dir: Path = Path("../models")
     log_dir: Path = Path("experiments")
 

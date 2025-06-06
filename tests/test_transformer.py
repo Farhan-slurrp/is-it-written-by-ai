@@ -1,12 +1,11 @@
 import sys
 import pytest
-from pathlib import Path
 
-sys.path.append("src")
+sys.path.append("..")
 
-from config import Config
-from data_loader import load_data, split_data
-from transformer_model import train_transformer
+from src.config import Config
+from src.data_loader import load_data, split_data
+from src.transformer_model import train_transformer
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 cfg = Config()
