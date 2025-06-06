@@ -27,8 +27,5 @@ def evaluate_model(model, X_val, y_val):
     plt.show()
 
 def save_model(model, path):
-
-    path = os.path.join('..', path)
-
     joblib.dump(model, path)
     print(f"Model saved to: {path}")
